@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Reservas • Martini Joseph</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🍷 Reservas</h1>
+
+    <p class="subtitulo">
+        Reserve sua experiência gastronômica
+    </p>
+
+</header>
+
+<div class="container">
+
+    <h2>Reserve sua mesa</h2>
+
+<p class="descricao-reserva">
+    Escolha a data, horário e número de convidados para sua experiência gastronômica.
+</p>
+
+   <form id="reservaForm">
+
+    <input
+        type="text"
+        id="nome"
+        placeholder="👤 Nome completo">
+
+    <input
+        type="email"
+        id="email"
+        placeholder="✉️ Email">
+
+    <input
+        type="tel"
+        id="telefone"
+        placeholder="📞 Telefone">
+
+    <div class="campo">
+
+        <label for="nascimento">
+            🎂 Data de nascimento
+        </label>
+
+        <input type="date" id="nascimento">
+
+        <small class="info-idade">
+            Apenas maiores de 18 anos podem realizar reservas.
+        </small>
+
+        <p id="erroIdade"></p>
+
+    </div>
+
+    <div class="linha">
+
+        <div class="campo">
+            <label for="dataReserva">
+                📅 Data da reserva
+            </label>
+
+            <input type="date" id="dataReserva">
+        </div>
+
+        <div class="campo">
+            <label for="hora">
+                🕐 Horário
+            </label>
+
+            <input type="time" id="hora">
+        </div>
+
+    </div>
+
+    <select id="pessoas">
+
+        <option value="">
+            👥 Número de pessoas
+        </option>
+
+        <option value="1">
+            1 pessoa
+        </option>
+
+        <option value="2">
+            2 pessoas
+        </option>
+
+        <option value="3">
+            3 pessoas
+        </option>
+
+        <option value="4">
+            4 pessoas
+        </option>
+
+        <option value="5">
+            5+ pessoas
+        </option>
+
+    </select>
+
+    <select id="ocasiao">
+
+        <option value="">
+            🎉 Ocasião especial (opcional)
+        </option>
+
+        <option>
+            Aniversário
+        </option>
+
+        <option>
+            Jantar romântico
+        </option>
+
+        <option>
+            Reunião
+        </option>
+
+        <option>
+            Comemoração
+        </option>
+
+    </select>
+
+    <textarea
+        id="obs"
+        placeholder="📝 Observações especiais">
+    </textarea>
+
+    <button type="submit" class="btn-reserva">
+        Reservar Mesa
+    </button>
+
+    <div id="feedback"></div>
+
+</form>
+
+</div>
+
+<script src="scripit.js"></script>
+
+</body>
+</html>
